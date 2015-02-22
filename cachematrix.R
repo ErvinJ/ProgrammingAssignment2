@@ -1,4 +1,17 @@
 ## pair of functions that cache the inverse of a matrix
+## How to run code: 
+## lets define matrix: x<- matrix(c(1,2,3,4), nrow=2, ncol=2) 
+## define object: yy<-makeCacheMatrix(x)
+## now we can run: cacheSolve(yy)
+## after first run result is:[,1] [,2]
+##                      [1,]   -2  1.5
+##                      [2,]    1 -0.5
+## after second run result is:> cacheSolve(yy)
+##                              getting cached data
+##                              [,1] [,2]
+##                        [1,]   -2  1.5
+##                        [2,]    1 -0.5
+
 
 ## makeCacheMatrix: This function creates a special 
 ## "matrix" object that can cache its inverse
